@@ -50,7 +50,7 @@
             callback(JSON.parse(httpRequest.responseText));
         });
 
-        httpRequest.open("GET", "http://hp-api.herokuapp.com/api/characters");
+        httpRequest.open("GET", "https://hp-api.herokuapp.com/api/characters");
         httpRequest.send();
     }
     // getData will pass the callback function an array of contact objects 
