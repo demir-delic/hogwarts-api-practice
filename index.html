@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Events</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<style>
+		body {
+			margin: 20px;
+		}
+
+		.container div {
+			margin-bottom: 20px;
+		}
+		img {
+			height: 300px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div>
+			<button type="button" class="btn btn-primary">Load Data</button>
+		</div>
+		<div>
+			<ul class="nav nav-tabs">
+				<li role="presentation" class="active">
+					<a href="#Gryffindor">Gryffindor</a>
+				</li>
+				<li role="presentation">
+					<a href="#Slytherin">Slytherin</a>
+				</li>
+				<li role="presentation">
+					<a href="#Hufflepuff">Hufflepuff</a>
+				</li>
+				<li role="presentation">
+					<a href="#Ravenclaw">Ravenclaw</a>
+				</li>
+				<li role="presentation">
+					<a href="#search">Search</a>
+				</li>
+			</ul>
+			<div id="Gryffindor" class="house">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>House</th>
+							<th>Patronus</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Append rows here -->
+					</tbody>
+				</table>
+			</div>
+			<div id="Slytherin" class="hidden house">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>House</th>
+							<th>Patronus</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Append rows here -->
+					</tbody>
+				</table>
+			</div>
+			<div id="Hufflepuff" class="hidden house">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>House</th>
+							<th>Patronus</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Append rows here -->
+					</tbody>
+				</table>
+			</div>
+			<div id="Ravenclaw" class="hidden house">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>House</th>
+							<th>Patronus</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Append rows here -->
+					</tbody>
+				</table>
+			</div>
+			<div id="search" class="hidden house">
+				<div>
+					<form class="form-inline">
+						<div class="form-group">
+							<label>Name</label>
+							<input id="query" type="text" class="form-control" placeholder="Harry Potter">
+						</div>
+						<button id="search" type="button" class="btn btn-default">Search</button>
+					</form>
+				</div>
+				<div id="results">
+					<!-- results html here -->
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>
